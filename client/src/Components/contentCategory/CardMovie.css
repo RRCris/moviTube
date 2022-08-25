@@ -1,0 +1,50 @@
+.CardMovie {
+  position: relative;
+  width: 150px;
+  height: 200px;
+  border: 2px solid var(--border-color2);
+  border-radius: 20px;
+  margin: 10px;
+}
+@media screen and (max-width: 620px) {
+  .CardMovie {
+    margin: 5px;
+  }
+}
+.CardMovie .CardMovie-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.CardMovie .CardMovie-image:hover {
+  transform: scale(1.1);
+}
+.CardMovie .CardMovie-image:hover div {
+  background-color: rgba(0, 0, 0, 0.6666666667);
+}
+.CardMovie .CardMovie-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.CardMovie .CardMovie-image div {
+  background-color: rgba(0, 0, 0, 0.1333333333);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+.CardMovie h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--letter-color1);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3333333333);
+}/*# sourceMappingURL=CardMovie.css.map */

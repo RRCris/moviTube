@@ -1,0 +1,50 @@
+.CardMovie {
+  position: relative;
+  width: 150px;
+  height: 200px;
+  border: 2px solid var(--border-color2);
+  border-radius: 20px;
+  margin: 10px;
+  @media screen and (max-width: 620px) {
+    margin: 5px;
+  }
+
+  .CardMovie-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    &:hover {
+      transform: scale(1.1);
+      div {
+        background-color: #000a;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    div {
+      background-color: #0002;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 10px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--letter-color1);
+    text-align: center;
+    background-color: #0005;
+  }
+}

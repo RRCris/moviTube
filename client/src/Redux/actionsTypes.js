@@ -1,0 +1,3 @@
+export const SET_PROFILE = "SET_PROFILE";
+export const SAVE_CATEGORIES = "SAVE_CATEGORIES";
+export const SAVE_MOVIES = "SAVE_MOVIES";
